@@ -1,1 +1,39 @@
-<p>index works!</p>
+<header>
+    <nav class="text-white p-4 bold bg-gradient-to-r from-teal-300  to-teal-500 flex justify-around items-center">
+        <div class="logo">
+            <h2 class="text-3xl bg-teal-600 p-1 rounded-lg">Todo App</h2>
+        </div>
+        <ul class="flex justify-center text-lg">
+            <li class="mx-3">
+                <a routerLink="./about" class="flex items-center">
+                    <i-bs name="columns-gap" class="mr-1"></i-bs>
+                    Todo
+                </a>
+            </li>
+            <li class="mx-3">
+                <a class="flex items-center" routerLink="./login">
+                    <i-bs name="fingerprint" class="mr-1"></i-bs>
+                    Login
+                </a>
+            </li>
+            <li class="mx-3"    >
+                <a routerLink="./register" class="flex items-center">
+                    <i-bs name="person-plus-fill" class="mr-1"></i-bs>
+                    Register 
+                </a>
+            </li>
+            <li class="mx-3">
+                <a routerLink="./about" class="flex items-center">
+                    <i-bs name="exclamation-octagon" class="mr-1"></i-bs>
+                    A propos
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="mx-5 container">
+    <router-outlet></router-outlet>
+</div>
+<footer class="footer p-4 bg-teal-300 text-center bg-gradient-to-r to-teal-300  from-teal-500 text-teal-700 bold absolute w-full bottom-0">
+<h2>Todo App &copy;  2022</h2>
+</footer> 
