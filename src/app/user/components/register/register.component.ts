@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+
+  Register(): boolean
+  {
+  alert("Register Component !");
+  return false;
+  }
 }

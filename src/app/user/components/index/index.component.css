@@ -1,4 +1,12 @@
-input{
-    width: 100%;
-    display: block;
+section{
+    position: relative;
+}
+section:nth-child(2):before{
+    position: absolute;
+    content: "";
+    right: 0;top: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid white;
+    border-left: 100px solid transparent;
 }

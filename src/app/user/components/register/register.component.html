@@ -1,1 +1,46 @@
-<p>register works!</p>
+<section class="w-full flex items-center h-screen px-3">
+        <form action="" method="post" (submit)="Register()" class="w-full p-2 block">
+            <h1 class="text-2xl text-center p-1 font-bold">
+                Création Compte
+            </h1>
+            <p class="my-5">
+                <label for="nom" class="label block font-mono">
+                    <i class="fad fa-user"></i>
+                    Nom </label>
+                <input type="text" autocomplete="none" name="nom" id="nom"
+                    class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            </p>
+            <p class="my-5">
+                <label for="Prenom" class="label block font-mono">
+                    <i class="fad fa-user"></i>
+                    Prenom </label>
+                <input type="text" autocomplete="none" name="Prenom" id="Prenom"
+                    class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            </p>
+            <p class="my-5">
+                <label for="Email" class="label block font-mono">
+                    <i class="fad fa-user"></i>
+                    Email Adresse </label>
+                <input type="text" autocomplete="none" name="Email" id="Email"
+                    class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            </p>
+            <p class="my-5">
+                <label for="password" class="label block font-mono">
+                    <i class="fad fa-user-unlock"></i>
+                    Password
+                </label>
+                <input type="password" autocomplete="none" name="password" id="password"
+                    class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            </p>
+            <p class="my-5">
+                <button
+                    class="p-3 shadow-lg bg-white text-amber-600 transition-300 duration-500 rounded text-lg bold w-full">
+                    <i class="fad fa-save"></i>
+                    S'enregistrer
+                </button>
+            </p>
+            <p class="text-center mt-4">
+                <a routerLink="login"> Vous avez déjà un compte <strong class="text-amber-600">Cliquez-ici !</strong></a>
+            </p>
+        </form>
+</section>

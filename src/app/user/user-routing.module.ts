@@ -9,7 +9,7 @@ const routes: Routes = [
     path: "", component : IndexComponent,
     children: [
       {
-        path: "", redirectTo: "login",  pathMatch : "full"
+        path: "", component : LoginComponent
       },
       {
         path: "login", component : LoginComponent

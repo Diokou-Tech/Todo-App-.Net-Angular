@@ -1,12 +1,15 @@
 <section class="w-full flex items-center h-screen px-3">
-    <form action="" method="post" class="w-full p-2 block">
-        <p class="my-5">
+    <form action="" method="post" (submit)="Login()" class="w-full p-2 block">
+        <h1 class="text-3xl flex flex-col items-center uppercase font-mono p-1">
+            Connexion
+        </h1>
+        <p class="my-10">
             <label for="login" class="label block font-mono">
                 <i class="fad fa-user"></i>
-                Login or Email</label>
+                Email Adresse</label>
             <input type="text" autocomplete="none" name="login" id="login" class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
         </p>
-        <p class="my-5">
+        <p class="my-10">
             <label for="password" class="label block font-mono"> 
                 <i class="fad fa-user-unlock"></i>
                 Password
@@ -20,6 +23,9 @@
             </button>
         </p>
         <p class="mt-5 sm:w-2/4 w-1/4 mx-auto flex justify-around">
+            <a routerLink="register" class="h-6 w-6" title="Register">
+                <i class="fad fa-user-plus fa-lg"></i>
+            </a>
             <a href="" title="Facebook Login">
                 <img class="h-6  w-6" src="../../../../assets/social_svg/facebook-f-brands.svg" alt="">
             </a>
@@ -28,9 +34,6 @@
             </a>
             <a href="" title="Twitter Login">
                 <img class="h-6 w-6" src="../../../../assets/social_svg/twitter-brands.svg" alt="">
-            </a>
-            <a routerLink="../register" class="h-6 w-6" title="Register">
-                <i class="fad fa-user-plus "></i>
             </a>
         </p>
     </form>
