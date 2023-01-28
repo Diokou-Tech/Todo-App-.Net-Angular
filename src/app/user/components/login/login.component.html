@@ -7,23 +7,27 @@
             <label for="login" class="label block font-mono">
                 <i class="fad fa-user"></i>
                 Email Adresse</label>
-            <input type="text" autocomplete="none" name="login" id="login" class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            <input type="text" autocomplete="none" name="login" id="login" class="block  w-full focus:outline-none transition-300 duration-500 focus:border-3 hover:border-3 border-b-2 border-amber-400">
         </p>
-        <p class="my-10">
+        <p class="my-10 relative">
             <label for="password" class="label block font-mono"> 
                 <i class="fad fa-user-unlock"></i>
                 Password
             </label>
+            <button type="button" class="absolute right-0 mb-5">
+                <i *ngIf="true" class="fad fa-eye"></i>
+                <i *ngIf="false" class="fad fa-eye-slash"></i>
+            </button>
             <input type="password" autocomplete="none" name="password" id="password" class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
         </p>
         <p class="mt-5">
-            <button class="p-3 shadow-lg bg-white text-amber-600 transition-300 duration-500 rounded text-lg bold w-full">
+            <button class="p-3 hvr-grow shadow-lg bg-white text-amber-600 transition-300 duration-500 rounded text-lg bold w-full">
                 <i class="fad fa-sign-in-alt"></i>
                 Se connecter
             </button>
         </p>
         <p class="mt-5 sm:w-2/4 w-1/4 mx-auto flex justify-around">
-            <a routerLink="register" class="h-6 w-6" title="Register">
+            <a routerLink="./register" class="h-6 w-6" title="Register">
                 <i class="fad fa-user-plus fa-lg"></i>
             </a>
             <a href="" title="Facebook Login">
