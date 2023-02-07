@@ -29,7 +29,8 @@
               "node_modules/hover.css/css/hover.css"
             ],
             "scripts": [
-              "src/assets/js/script.js"
+              "src/assets/js/script.js",
+              "src/assets/pace/pace.min.js"
             ]
           },
           "configurations": {

@@ -9,13 +9,13 @@ const routes: Routes = [
     path: "", component : IndexComponent,
     children: [
       {
-        path: "", component : LoginComponent
+        path: "", component : LoginComponent, title : "Todo App - Login"
       },
       {
-        path: "register", component : RegisterComponent
+        path: "register", component : RegisterComponent, title : "todo App - Register"
       },
       {
-        path : "**", redirectTo : "",  pathMatch : "full"
+        path : "**", redirectTo : "",  pathMatch : "full", title : "Todo App - Login"
       }
     ]
   }
