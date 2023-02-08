@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "~bootstrap/dist/css/bootstrap.css" */
+html, body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    overflow: auto;
+  }
+.full-h{
+    height: calc(100vh - 50px);
+}
