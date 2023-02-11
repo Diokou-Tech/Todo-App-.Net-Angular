@@ -6,31 +6,37 @@
             <span class="font-mono font-italic text-amber-500">Todo App</span>
         </h1> 
         <ul>
-            <li class="bg-amber-50 hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
+            <li class="bg-amber-100 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                 <a href="#" class="text-center">
-                    <i class="fad fa-tasks" ></i>
+                    <i class="fad fa-tachometer-alt hvr-icon"></i>
+                    <span class="block">Tableau de Bord</span>
+                </a>
+            </li>
+            <li class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
+                <a href="#" class="text-center">
+                    <i class="fad fa-tasks hvr-icon" ></i>
                     <span class="block">Taches</span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
+            <li class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                 <a href="#" class="text-center">
-                    <i class="fad fa-toolbox"></i>
+                    <i class="fad fa-toolbox hvr-icon"></i>
                     <span class="block">Projets</span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
+            <li class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                 <a href="#" class="text-center">
-                    <i class="fad fa-cog"></i> 
+                    <i class="fad fa-cog hvr-icon"></i> 
                     <span class="block">
                         Préférences
                     </span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-sweep-to-top duration-500 rounded-md text-center my-2 text-xl p-5">
+            <li class="bg-amber-50 hvr-sweep-to-top block duration-500 rounded-md text-center my-2 text-xl p-5">
                 <a href="#" class="text-center">
-                    <i class="fad fa-users-cog"></i>
+                    <i class="fad fa-users-cog hvr-icon"></i>
                     <span class="block">
-                        Gestion des utilisateurs
+                        Utilisateurs
                     </span>
                 </a>
             </li>
@@ -39,31 +45,31 @@
     <!-- content -->
     <section class="sm:w-10/12">
         <!-- header content -->
-        <header class="flex items-center shadow-sm justify-between p-2">
+        <header class="flex items-center  text-md shadow-sm justify-between p-2">
             <span class="w-1/3 flex items-center">
                 <button class="text-amber-500 mr-3"><i class="fad fa-search"></i></button> 
-                    <input type="search" name="search" id="search" class="focus:outline-none hover:outline-none w-full border-amber-100 rounded-md border p-1 " placeholder="Search !">
+                    <input type="search" name="search" id="search" class="focus:outline-none focus:border-3 hover:border-3 hover:border-amber-300 w-full border-amber-100 rounded-md border p-1 " placeholder="Faites une recherche !">
             </span>
-            <ul class="w-2/4 mx-4 justify-around flex items-center font-mono">
-                <li class="p-1">
+            <ul class="w-2/4 mx-4 justify-end flex items-center font-mono">
+                <li class="p-1 mx-2">
                         <div class="form-check form-switch">
                             <label class="form-check-label text-gray-800" for="lang">
-                                <i class="fad p-1 fa-language"></i>
-                                <input class="form-check-input appearance-none w-9 duration-300 rounded-full h-5 align-top bg-amber-100 bg-no-repeat bg-contain focus:outline-none cursor-pointer checked:bg-amber-500 shadow-sm" type="checkbox" role="switch" id="lang">
-                                Fr </label>
+                                <i class="fad pr-1 fa-language"></i>Fr
+                                <input class="form-check-input appearance-none w-9 duration-300 rounded-full h-5 align-top bg-amber-100 bg-no-repeat bg-contain focus:outline-none cursor-pointer border-2 border-amber-400 checked:bg-amber-500 shadow-sm" type="checkbox" role="switch" id="lang">
+                                 </label>
                         </div>
                 </li>
-                <li class="p-1 ">
-                    <a href="#"><i class="fad fa-user"></i> Mon Profil</a>
+                <li class="p-1 mx-2">
+                    <a href="#"><i class="fad fa-user"></i></a>
                 </li>
-                <li class="p-1 ">
-                    <a href="#"><i class="fad fa-sign-out"></i> Deconnexion</a> 
+                <li class="p-1 mx-2">
+                    <a href="#"><i class="fad fa-sign-out"></i></a> 
                 </li>
             </ul>
         </header>
         <!-- body content -->
-        <div class="block full-h border bg-amber-50 mx-auto">
-           <section class="m-5 relative h-full p-2 bg-white">
+        <div class="block full-h border bg-amber-100 mx-auto">
+           <section class="m-5 shadow-md relative h-full p-2 bg-white">
             <h1>Container Model </h1>
            </section>
         </div>

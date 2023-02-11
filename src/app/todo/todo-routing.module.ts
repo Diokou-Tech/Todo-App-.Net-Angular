@@ -7,9 +7,9 @@ const routes: Routes = [
   {
     path: "", component: IndexComponent,
     children: [
-    { path: "", component: IndexComponent },
-    { path: "add-todo", component: IndexComponent },
-    { path: "edit-todo", component: EditTodoComponent },
+    { path: "", component: IndexComponent, title: "Todo App" },
+    { path: "add-todo", component: IndexComponent, title: "Todo App - Add Todo" },
+    { path: "edit-todo", component: EditTodoComponent, title: "Todo App - edit Todo"  },
     { path: "**", redirectTo : "", pathMatch : "full" }
     ]
   }
