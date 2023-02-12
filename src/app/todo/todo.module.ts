@@ -10,6 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { IdentityComponent } from './components/identity/identity.component';
 import { PreferencesComponent } from './components/preferences/preferences.component';
 import { ProjetComponent } from './components/projet/projet.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ProjetComponent } from './components/projet/projet.component';
     DashboardComponent,
     IdentityComponent,
     PreferencesComponent,
-    ProjetComponent
+    ProjetComponent,
+    TodoListComponent
   ],
   imports: [
     CommonModule,

@@ -6,34 +6,34 @@
             <span class="font-mono font-italic text-amber-500">Todo App</span>
         </h1> 
         <ul>
-            <li class="bg-amber-100 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
-                <a href="#" class="text-center">
+            <li>
+                <a routerLink="dashboard" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
                     <i class="fad fa-tachometer-alt hvr-icon"></i>
                     <span class="block">Tableau de Bord</span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
-                <a href="#" class="text-center">
+            <li>
+                <a routerLink="todo-list" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
                     <i class="fad fa-tasks hvr-icon" ></i>
                     <span class="block">Taches</span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
-                <a href="#" class="text-center">
+            <li>
+                <a routerLink="projet" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                     <i class="fad fa-toolbox hvr-icon"></i>
                     <span class="block">Projets</span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
-                <a href="#" class="text-center">
+            <li>
+                <a routerLink="preference" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                     <i class="fad fa-cog hvr-icon"></i> 
                     <span class="block">
                         Préférences
                     </span>
                 </a>
             </li>
-            <li class="bg-amber-50 hvr-sweep-to-top block duration-500 rounded-md text-center my-2 text-xl p-5">
-                <a href="#" class="text-center">
+            <li>
+                <a routerLink="identity" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-sweep-to-top block duration-500 rounded-md text-center my-2 text-xl p-5">
                     <i class="fad fa-users-cog hvr-icon"></i>
                     <span class="block">
                         Utilisateurs
@@ -68,9 +68,9 @@
             </ul>
         </header>
         <!-- body content -->
-        <div class="block full-h border bg-amber-100 mx-auto">
-           <section class="m-5 shadow-md relative h-full p-2 bg-white">
-            <h1>Container Model </h1>
+        <div class="block full-h border border-white bg-amber-100 mx-auto">
+           <section class="m-5 shadow-md min-h-full p-2 bg-white">
+            <router-outlet></router-outlet>
            </section>
         </div>
     </section>
