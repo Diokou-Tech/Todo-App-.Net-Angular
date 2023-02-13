@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
+  
+  isExtended : boolean = false;
 
+  toggleMenu()
+  {
+    this.isExtended = !this.isExtended;
+  }
 }

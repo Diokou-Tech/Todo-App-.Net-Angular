@@ -1,54 +1,54 @@
 <div class="container-fluid flex h-screen">
     <!-- sidebar -->
-    <section class="sm:w-2/12 p-2 mx-auto shadow-lg bg-white">
+    <section [ngClass]="!isExtended ? 'sm:w-2/12' : 'sm:w-1/12' " class="sm:w-2/12 duration-300 ease-out p-2 mx-auto shadow-lg bg-white duration-500 transition-1s">
         <h1 class="text-center p-3">
             <img src="../../../../assets/img/logo.png" alt="" class="w-12 mx-auto h-12" srcset="">
-            <span class="font-mono font-italic text-amber-500">Todo App</span>
+            <span class="font-mono font-italic text-amber-500" *ngIf="!isExtended">Todo App</span>
         </h1> 
         <ul>
             <li>
                 <a routerLink="dashboard" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
                     <i class="fad fa-tachometer-alt hvr-icon"></i>
-                    <span class="block">Tableau de Bord</span>
+                    <span *ngIf="!isExtended" class="block">Tableau de Bord</span>
                 </a>
             </li>
             <li>
                 <a routerLink="todo-list" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top block duration-500 rounded-md text-center p-5 my-2 text-xl">
                     <i class="fad fa-tasks hvr-icon" ></i>
-                    <span class="block">Taches</span>
+                    <span *ngIf="!isExtended" class="block">Taches</span>
                 </a>
             </li>
             <li>
                 <a routerLink="projet" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                     <i class="fad fa-toolbox hvr-icon"></i>
-                    <span class="block">Projets</span>
+                    <span *ngIf="!isExtended" class="block">Projets</span>
                 </a>
             </li>
             <li>
                 <a routerLink="preference" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-icon-bounce hvr-sweep-to-top duration-500 block rounded-md text-center my-2 text-xl p-5">
                     <i class="fad fa-cog hvr-icon"></i> 
-                    <span class="block">
-                        Préférences
-                    </span>
+                    <span class="block" *ngIf="!isExtended"> Préférences </span>
                 </a>
             </li>
             <li>
                 <a routerLink="identity" routerLinkActive="bg-amber-100" class="bg-amber-50 hvr-sweep-to-top block duration-500 rounded-md text-center my-2 text-xl p-5">
                     <i class="fad fa-users-cog hvr-icon"></i>
-                    <span class="block">
-                        Utilisateurs
-                    </span>
+                    <span class="block" *ngIf="!isExtended">  Utilisateurs </span>
                 </a>
             </li>
         </ul>
     </section>
     <!-- content -->
-    <section class="sm:w-10/12">
+    <section [ngClass]="!isExtended ? 'sm:w-10/12 duration-300 ease-out' : 'w-full' ">
         <!-- header content -->
         <header class="flex items-center  text-md shadow-sm justify-between p-2">
             <span class="w-1/3 flex items-center">
-                <button class="text-amber-500 mr-3"><i class="fad fa-search"></i></button> 
-                    <input type="search" name="search" id="search" class="focus:outline-none focus:border-3 hover:border-3 hover:border-amber-300 w-full border-amber-100 rounded-md border p-1 " placeholder="Faites une recherche !">
+                <button class="mr-3" (click)="toggleMenu()">
+                    <i *ngIf="isExtended" title="Afficher menu" class="fad fa-bars ease-out duration-300"></i> 
+                    <i *ngIf="!isExtended" title="Réduire le menu" class="fad fa-align-left"></i>
+                </button>
+                <input type="search" name="search" id="search" class="focus:outline-none focus:border-3 hover:border-3 hover:border-amber-300 w-full border-amber-100 rounded-md border p-1 " placeholder="Faites une recherche !">
+                <button class="text-amber-500 ml-3"><i class="fad fa-search"></i></button> 
             </span>
             <ul class="w-2/4 mx-4 justify-end flex items-center font-mono">
                 <li class="p-1 mx-2">
