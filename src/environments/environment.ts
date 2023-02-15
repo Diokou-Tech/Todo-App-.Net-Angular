@@ -1,4 +1,4 @@
 export const environment = {
-    LocaleIdDefault : "fr-FR",
-    LocaleIdEng : "en-US"
+    LocaleIdDefault : "fr",
+    LocaleIdEng : "en"
 };

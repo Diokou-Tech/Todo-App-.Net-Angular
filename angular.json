@@ -9,10 +9,21 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale" : "fr",
+        "locales": {
+          "en" : {
+            "translation" : "src/locale/messages.en.xlf",
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "fr"
+            ],
             "outputPath": "dist/ng_app",
             "index": "src/index.html",
             "main": "src/main.ts",

@@ -1,17 +1,17 @@
 <section class="w-full flex items-center h-screen px-3">
         <form action="" method="post" (submit)="Register()" class="w-full p-2 block">
-            <h1 class="text-2xl text-center p-1 font-bold">
+            <h1 class="text-2xl text-center p-1 font-bold" i18n>
                 Inscription
             </h1>
             <p class="my-5">
-                <label for="nom" class="label block font-mono">
+                <label i18n for="nom" class="label block font-mono">
                     <i class="fad fa-user"></i>
                     Nom </label>
                 <input type="text" autocomplete="none" name="nom" id="nom"
                     class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
-                <label for="Prenom" class="label block font-mono">
+                <label i18n for="Prenom" class="label block font-mono">
                     <i class="fad fa-user"></i>
                     Prenom </label>
                 <input type="text" autocomplete="none" name="Prenom" id="Prenom"
@@ -19,29 +19,29 @@
             </p>
             <p class="my-5">
 
-                <label for="Email" class="label block font-mono">
+                <label i18n for="Email" class="label block font-mono">
                     <i class="fad fa-user"></i>
-                    Email Adresse </label>
+                    Adresse electronique </label>
                 <input type="text" autocomplete="none" name="Email" id="Email"
                     class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
-                <label for="password" class="label block font-mono">
+                <label i18n for="password" class="label block font-mono">
                     <i class="fad fa-user-unlock"></i>
-                    Password
+                    Mot de passe
                 </label>
                 <input type="password" autocomplete="none" name="password" id="password"
                     class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
-                <button
+                <button i18n
                     class="p-3 shadow-lgrounded-md rounded-md hvr-sweep-to-right bg-white text-amber-600 transition-300 focus:outline-none hover:outline-none duration-500 rounded text-lg bold w-full">
                     <i class="fad fa-save"></i>
                     S'inscrire
                 </button>
             </p>
             <p class="text-center mt-5">
-                <a routerLink="/"> J'ai déjà un compte <strong class="text-amber-600">Cliquez-ici !</strong></a>
+                <a routerLink="/" i18n> J'ai déjà un compte <strong class="text-amber-600">Cliquez-ici !</strong></a>
             </p>
         </form>
 </section>
