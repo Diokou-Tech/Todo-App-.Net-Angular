@@ -44,8 +44,8 @@
         <header class="flex items-center  text-md shadow-sm justify-between p-2">
             <span class="w-1/3 flex items-center">
                 <button class="mr-3" (click)="toggleMenu()">
-                    <i *ngIf="isExtended" title="Afficher menu" class="fad fa-bars ease-out duration-300"></i> 
-                    <i *ngIf="!isExtended" title="Réduire le menu" class="fad fa-align-left"></i>
+                    <i *ngIf="isExtended" title="Afficher menu" class="fad fa-bars ease-out duration-500 transition-1s"></i> 
+                    <i *ngIf="!isExtended" title="Réduire le menu" class="fad fa-align-left ease-out duration-500 transition-1s"></i>
                 </button>
                 <input type="search" name="search" id="search" class="focus:outline-none focus:border-3 hover:border-3 hover:border-amber-300 w-full border-amber-100 rounded-md border p-1 " placeholder="Faites une recherche !">
                 <button class="text-amber-500 ml-3"><i class="fad fa-search"></i></button> 
