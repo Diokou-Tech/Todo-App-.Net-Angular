@@ -1,20 +1,20 @@
 <section class="w-full flex items-center h-screen px-3">
-        <form action="" method="post" (submit)="Register()" class="w-full p-2 block">
+        <form  [formGroup]="formRegister" (submit)="Register()" class="w-full p-2 block">
             <h1 class="text-2xl text-center p-1 font-bold" i18n>
                 Inscription
             </h1>
             <p class="my-5">
-                <label i18n for="nom" class="label block font-mono">
+                <label i18n for="UserName" class="label block font-mono">
                     <i class="fad fa-user"></i>
-                    Nom </label>
-                <input type="text" autocomplete="none" name="nom" id="nom"
+                    Nom Complet </label>
+                <input type="text" autocomplete="none" formControlName="UserName" name="UserName" id="UserName"
                     class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
-                <label i18n for="Prenom" class="label block font-mono">
+                <label i18n for="Telephone" class="label block font-mono">
                     <i class="fad fa-user"></i>
-                    Prenom </label>
-                <input type="text" autocomplete="none" name="Prenom" id="Prenom"
+                    Telephone </label>
+                <input type="tel" autocomplete="none" formControlName="Telephone" name="Telephone" id="Telephone"
                     class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
@@ -22,15 +22,23 @@
                 <label i18n for="Email" class="label block font-mono">
                     <i class="fad fa-user"></i>
                     Adresse electronique </label>
-                <input type="text" autocomplete="none" name="Email" id="Email"
+                <input type="text" autocomplete="none" formControlName="Email" name="Email" id="Email"
                     class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
-                <label i18n for="password" class="label block font-mono">
+                <label i18n for="Password" class="label block font-mono">
                     <i class="fad fa-user-unlock"></i>
                     Mot de passe
                 </label>
-                <input type="password" autocomplete="none" name="password" id="password"
+                <input type="Password" autocomplete="none" formControlName="Password" name="Password" id="Password"
+                    class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            </p>
+            <p class="my-5">
+                <label i18n for="ConfirmPassword" class="label block font-mono">
+                    <i class="fad fa-user-unlock"></i>
+                   Confirmation Mot de passe
+                </label>
+                <input type="password" autocomplete="none" formControlName="ConfirmPassword" name="ConfirmPassword" id="ConfirmPassword"
                     class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">

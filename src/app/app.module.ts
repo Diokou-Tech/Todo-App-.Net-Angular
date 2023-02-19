@@ -16,6 +16,7 @@ import { UserModule } from './user/user.module';
     AppRoutingModule,
     UserModule,
     TodoModule,
+    SharedModule
   ],
   exports: [
     SharedModule

@@ -9,7 +9,7 @@ const routes: Routes = [
     path: "", component : IndexComponent,
     children: [
       {
-        path: "", component : LoginComponent, title : "Todo App - Login"
+        path: "", component : LoginComponent, title : "Todo App - Login",
       },
       {
         path: "register", component : RegisterComponent, title : "todo App - Register"
