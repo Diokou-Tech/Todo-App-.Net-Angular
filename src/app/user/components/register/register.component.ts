@@ -10,6 +10,7 @@ import { AuthService } from 'src/app/shared/Services/auth.service';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
+showPassword : boolean = false;
   constructor(
     private readonly _authService: AuthService,
     private readonly _alerterService: AlerterService

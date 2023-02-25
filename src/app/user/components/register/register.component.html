@@ -25,25 +25,32 @@
                 <input type="text" autocomplete="none" formControlName="Email" name="Email" id="Email"
                     class="block  w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
-            <p class="my-5">
-                <label i18n for="Password" class="label block font-mono">
-                    <i class="fad fa-user-unlock"></i>
-                    Mot de passe
-                </label>
-                <input type="Password" autocomplete="none" formControlName="Password" name="Password" id="Password"
-                    class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            <p class="my-5 relative">
+            <label i18n for="Password" class="label block font-mono"> 
+                <i class="fad fa-user-unlock"></i>
+                Mot de passe
+            </label>
+            <button type="button" (click)="showPassword = !showPassword" class="absolute right-0 mb-5">
+                <i *ngIf="!showPassword" class="fad fa-eye"></i>
+                <i *ngIf="showPassword" class="fad fa-eye-slash"></i>
+            </button>
+            <input [type]="!showPassword ? 'password' : 'text' " formControlName="Password"  autocomplete="none" name="Password" id="Password" class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
-            <p class="my-5">
-                <label i18n for="ConfirmPassword" class="label block font-mono">
-                    <i class="fad fa-user-unlock"></i>
-                   Confirmation Mot de passe
-                </label>
-                <input type="password" autocomplete="none" formControlName="ConfirmPassword" name="ConfirmPassword" id="ConfirmPassword"
-                    class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            <p class="my-5 relative">
+            <label i18n for="ConfirmPassword" class="label block font-mono"> 
+                <i class="fad fa-user-unlock"></i>
+                Confirmation Mot de passe
+            </label>
+            <button type="button" (click)="showPassword = !showPassword" class="absolute right-0 mb-5">
+                <i *ngIf="!showPassword" class="fad fa-eye"></i>
+                <i *ngIf="showPassword" class="fad fa-eye-slash"></i>
+            </button>
+            <input [type]="!showPassword ? 'password' : 'text' " formControlName="ConfirmPassword"  autocomplete="none" name="ConfirmPassword" id="ConfirmPassword" class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
             </p>
             <p class="my-5">
                 <button i18n
-                    class="p-3 shadow-lgrounded-md rounded-md hvr-sweep-to-right bg-white text-amber-600 transition-300 focus:outline-none hover:outline-none duration-500 rounded text-lg bold w-full">
+                    [disabled] ="!formRegister.valid"
+                    class="p-3 shadow-lg rounded-md hvr-sweep-to-right bg-white text-amber-600 transition-300 focus:outline-none hover:outline-none duration-500 text-lg bold w-full">
                     <i class="fad fa-save"></i>
                     S'inscrire
                 </button>

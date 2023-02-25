@@ -7,7 +7,7 @@
             <label i18n for="login" class="label block font-mono">
                 <i class="fad fa-user"></i>
                 Adresse Email</label>
-            <input type="text" autocomplete="none" name="login" id="login" class="block  w-full focus:outline-none border-b-2 border-amber-400">
+            <input type="text" autocomplete="false" name="login" id="login" class="block  w-full focus:outline-none border-b-2 border-amber-400">
         </p>
         <p class="my-10 relative">
             <label i18n for="password" class="label block font-mono"> 
@@ -18,7 +18,7 @@
                 <i *ngIf="!showPassword" class="fad fa-eye"></i>
                 <i *ngIf="showPassword" class="fad fa-eye-slash"></i>
             </button>
-            <input [type]="!showPassword ? 'password' : 'text' " autocomplete="none" name="password" id="password" class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
+            <input [type]="!showPassword ? 'password' : 'text' " autocomplete="false" name="password" id="password" class="block w-full focus:outline-none hover:outline-none border-b-2 border-amber-400">
         </p>
         <p class="mt-5">
             <button i18n class="p-3 hvr-sweep-to-right rounded-md shadow-lg bg-white text-amber-600 focus:outline-none hover:outline-none transition-300 duration-500 rounded text-lg bold w-full">
@@ -26,22 +26,19 @@
                 Se connecter
             </button>
         </p>
-        <p class="mt-6 md:w-2/4 w-2/3 mx-auto flex items-center justify-around">
-            <a routerLink="register" class="h-6 w-6" title="Register">
-                <i class="fad fa-user-plus fa-lg"></i>
+        <p class="mt-6 md:w-3/4 w-2/3 text-md mx-auto text-amber-600 flex flex-col items-center text-center justify-around">
+            <a routerLink="register" class="rounded-md m-1 border-amber-200 p-1 border w-full" title="Register">
+                <i class="fad fa-user-plus fa-md"></i> S'inscrire
             </a>
-            <a routerLink="register" class="h-6 w-6" title="Google Login">
-                <i class="fab fa-google fa-lg"></i>
+            <a routerLink="register" class="rounded-md border m-1 border-amber-200 p-1 w-full" title="Google Login">
+                <i class="fab fa-google fa-md"></i> Se connecter avec google
             </a>
-            <a href="" title="Facebook Login"  class="h-6 w-6">
-                <i class="fab fa-facebook fa-lg"></i>
+            <a href="" title="Facebook Login"  class="rounded-md border m-1 border-amber-200 p-1 w-full">
+                <i class="fab fa-facebook fa-md"></i> Se connecter avec facebook
             </a>
-            <a href="" title="Linkedin Login"  class="h-6 w-6">
-                <i class="fab fa-linkedin fa-lg"></i>
+            <a href="" title="Twitter Login"  class="rounded-md border m-1 border-amber-200 p-1 w-full">
+                <i class="fab fa-twitter fa-md"></i> Se connecter avec twitter
             </a>
-            <a href="" title="Twitter Login"  class="h-6 w-6">
-                <i class="fab fa-twitter fa-lg"></i>
-            </a>
-             </p>
+             </p>   
     </form>
 </section>

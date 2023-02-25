@@ -5,10 +5,9 @@ import Swal from 'sweetalert2';
   providedIn: 'root'
 })
 export class AlerterService {
-
   // mixin
   _toast = Swal.mixin({
-    width: 400,
+    width: 380,
     currentProgressStep: 20,
     toast : true,
     timerProgressBar: true,
