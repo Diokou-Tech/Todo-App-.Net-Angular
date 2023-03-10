@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'app',
     loadChildren: () => import('./todo/todo.module').then((m) => m.TodoModule),
-    canActivate : [false]
+    // canActivate : [false]
   },
   {
     path : "**", redirectTo : "auth",  pathMatch : "full"

@@ -39,15 +39,14 @@ export class AlerterService {
   }
   AlertError(msg:string) : void
   {
-
+    this._toast.fire("",msg,"error");
   }
   ErrorServer() : void
   {
-
+    this._toast.fire("","Erreur Serveur  ! Veuiller Contacter votre fournisseur","error");
   }
   ConfirmAction(msg:string = '') : void
   {
-
   }
 
 }
