@@ -41,6 +41,10 @@ export class AlerterService {
   {
     this._toast.fire("",msg,"error");
   }
+  AlertInfo(msg:string) : void
+  {
+    this._toast.fire("",msg,"info");
+  }
   ErrorServer() : void
   {
     this._toast.fire("","Erreur Serveur  ! Veuiller Contacter votre fournisseur","error");

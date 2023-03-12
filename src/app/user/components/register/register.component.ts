@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ResponseDto } from 'src/app/shared/Dtos/ResponseDto';
+import { AuthClient } from 'src/app/generated/api-Service';
 import { AlerterService } from 'src/app/shared/Services/alerter.service';
-import { AuthService } from 'src/app/shared/Services/auth.service';
-
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -12,7 +10,7 @@ import { AuthService } from 'src/app/shared/Services/auth.service';
 export class RegisterComponent {
   showPassword: boolean = false;
   constructor(
-    private readonly _authService: AuthService,
+    private readonly _authClient: AuthClient,
     private readonly _alerterService: AlerterService
   ) {}
   public formRegister: FormGroup = new FormGroup({
@@ -34,9 +32,9 @@ export class RegisterComponent {
   });
   async Register() {
     if (this.formRegister.valid) {
-      let response = await this._authService.Register(this.formRegister.value);
+      let response = await this._authClient.register(this.formRegister.value);
       response.subscribe(
-        (data: ResponseDto) => {
+        (data) => {
           if (data.isSuccess == true) {
             this._alerterService.AlertSuccess(data.message);
           } else {

@@ -1,0 +1,10 @@
+{
+    "runtime": "Net60",
+    "swaggerGenerator": {
+      "url": "https://localhost:7258/swagger/v1/swagger.json",
+      "output": "src/app/api/api.generated.ts",
+      "ngModuleName": "api",
+      "ngNamespace": "MyApi"
+    }
+  }
+  
